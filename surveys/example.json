@@ -1,0 +1,10 @@
+{
+  "active": true,
+  "question": "What's your favorite language?",
+  "answers": [
+    "Kobol",
+    "Visual Basic",
+    "Java",
+    "Java 8"
+  ]
+}
