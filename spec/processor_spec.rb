@@ -7,7 +7,7 @@ describe Processor do
     inputdir = Dir.mktmpdir
     outputdir = Dir.mktmpdir
 
-    File.open(File.join(inputdir, 'survey_01.json'), 'w') do |f|
+    File.open(File.join(inputdir, 'favorite_language.json'), 'w') do |f|
       f.write({
         active: true,
         question: 'Whats your favorite language?',
@@ -15,9 +15,8 @@ describe Processor do
       }.to_json)
     end
 
-    File.open(File.join(inputdir, 'survey_02.json'), 'w') do |f|
+    File.open(File.join(inputdir, 'is_tdd_dead.json'), 'w') do |f|
       f.write({
-        active: false,
         question: 'Do you think TDD is dead?',
         answers: ['Yes', 'No', 'Who cares!', 'TDD what?']
       }.to_json)
@@ -28,6 +27,7 @@ describe Processor do
     surveys_data = {
       surveys: [
         {
+          id: 'favorite_language',
           question: 'Whats your favorite language?',
           answers: ['Kobol', 'Java', 'Visual Basic']
         }
