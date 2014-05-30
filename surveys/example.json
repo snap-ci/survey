@@ -1,10 +1,10 @@
 {
   "active": true,
-  "question": "What's your favorite language?",
+  "question": "What site do you get your technology news from?",
   "answers": [
-    "Perl",
-    "Visual Basic",
-    "Java",
-    "Java 8"
+    "BoingBoing",
+    "TheChangelog",
+    "DaringFireball",
+    "ArsTechnica"
   ]
 }
